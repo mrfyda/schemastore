@@ -453,6 +453,15 @@
       "url": "https://json.schemastore.org/cloudify.json"
     },
     {
+      "name": ".codacy.yml",
+      "description": "Schema for Codacy configuration files",
+      "fileMatch": [
+        ".codacy.yml",
+        ".codacy.yaml"
+      ],
+      "url": "https://json.schemastore.org/codacy.json"
+    },
+    {
         "name": "codemagic",
         "description": "JSON schema for Codemagic CI/CD file configuration",
         "fileMatch": [

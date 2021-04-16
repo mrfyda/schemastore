@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://json.schemastore.org/codacy",
+  "title": "JSON schema for Codacy configuration files",
+  "description": "Schema for codacy.yml files.",
+  "type": "object",
+  "definitions": {
+    "file_extensions": {
+      "title": "<title for file_extensions>",
+      "description": "<description for file_extensions>",
+      "type": "array",
+      "items": {
+        "$ref": "file_extension"
+      }
+    },
+    "file_extension": {
+      "title": "",
+      "description": "",
+      "type": "string"
+    },
+    "file_glob": {
+      "title": "",
+      "description": "",
+      "type": "string"
+    },
+    "exclude_paths": {
+      "title": "",
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/file_glob"
+      }
+    }
+  },
+  "properties": {
+    "engines": {
+      "title": "",
+      "description": "",
+      "type": "object",
+      "properties": {
+        ".*": {
+          "title": "",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "exclude_paths": {
+              "$ref": "#/definitions/exclude_paths"
+            },
+            "base_sub_dir": {
+              "tile": "",
+              "description": "",
+              "type": "string"
+            },
+            "extra_values": {
+              "title": "",
+              "description": "",
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "exclude_paths": {
+      "$ref": "#/definitions/exclude_paths"
+    },
+    "languages": {
+      "title": "",
+      "description": "",
+      "type": "object",
+      "properties": {
+        ".*": {
+          "title": "",
+          "description": "",
+          "type": "object",
+          "properties": {
+            "extensions": {
+              "$ref": "file_extensions"
+            }
+          },
+          "required": ["extensions"]
+        }
+      }
+    }
+  }
+}
