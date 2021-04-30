@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "$id": "https://json.schemastore.org/codacy",
   "title": "JSON schema for Codacy configuration files",
   "description": "Schema for codacy.yml files.",
