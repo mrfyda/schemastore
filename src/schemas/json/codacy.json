@@ -10,7 +10,7 @@
       "description": "<description for file_extensions>",
       "type": "array",
       "items": {
-        "$ref": "file_extension"
+        "$ref": "#/definitions/file_extension"
       }
     },
     "file_extension": {
@@ -47,7 +47,7 @@
               "$ref": "#/definitions/exclude_paths"
             },
             "base_sub_dir": {
-              "tile": "",
+              "title": "",
               "description": "",
               "type": "string"
             },
@@ -74,7 +74,7 @@
           "type": "object",
           "properties": {
             "extensions": {
-              "$ref": "file_extensions"
+              "$ref": "#/definitions/file_extensions"
             }
           },
           "required": ["extensions"]
