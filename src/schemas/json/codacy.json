@@ -6,7 +6,6 @@
   "type": "object",
   "definitions": {
     "file_extensions": {
-      "title": "<title for file_extensions>",
       "description": "<description for file_extensions>",
       "type": "array",
       "items": {
@@ -14,17 +13,14 @@
       }
     },
     "file_extension": {
-      "title": "",
       "description": "",
       "type": "string"
     },
     "file_glob": {
-      "title": "",
       "description": "",
       "type": "string"
     },
     "exclude_paths": {
-      "title": "",
       "description": "",
       "type": "array",
       "items": {
@@ -34,12 +30,10 @@
   },
   "properties": {
     "engines": {
-      "title": "",
       "description": "",
       "type": "object",
       "properties": {
         ".*": {
-          "title": "",
           "description": "",
           "type": "object",
           "properties": {
@@ -47,12 +41,10 @@
               "$ref": "#/definitions/exclude_paths"
             },
             "base_sub_dir": {
-              "title": "",
               "description": "",
               "type": "string"
             },
             "extra_values": {
-              "title": "",
               "description": "",
               "type": "object"
             }
@@ -64,12 +56,10 @@
       "$ref": "#/definitions/exclude_paths"
     },
     "languages": {
-      "title": "",
       "description": "",
       "type": "object",
       "properties": {
         ".*": {
-          "title": "",
           "description": "",
           "type": "object",
           "properties": {
