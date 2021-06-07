@@ -6,26 +6,20 @@
   "type": "object",
   "definitions": {
     "file_extensions": {
-      "title": "<title for file_extensions>",
-      "description": "<description for file_extensions>",
+      "description": "One or more file extensions to associate with a programming language.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/file_extension"
       }
     },
     "file_extension": {
-      "title": "",
-      "description": "",
       "type": "string"
     },
     "file_glob": {
-      "title": "",
-      "description": "",
       "type": "string"
     },
     "exclude_paths": {
-      "title": "",
-      "description": "",
+      "description": "One or more glob patterns to exclude files from analysis.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/file_glob"
@@ -34,25 +28,21 @@
   },
   "properties": {
     "engines": {
-      "title": "",
-      "description": "",
+      "description": "Configures the behavior of specific tools.",
       "type": "object",
       "properties": {
         ".*": {
-          "title": "",
-          "description": "",
+          "description": "Specific tool to configure.",
           "type": "object",
           "properties": {
             "exclude_paths": {
               "$ref": "#/definitions/exclude_paths"
             },
             "base_sub_dir": {
-              "title": "",
-              "description": "",
+              "description": "Repository directory on which to start the analysis for the specific tool.",
               "type": "string"
             },
             "extra_values": {
-              "title": "",
               "description": "",
               "type": "object"
             }
@@ -64,13 +54,11 @@
       "$ref": "#/definitions/exclude_paths"
     },
     "languages": {
-      "title": "",
-      "description": "",
+      "description": "Configures custom file extensions for programming languages.",
       "type": "object",
       "properties": {
         ".*": {
-          "title": "",
-          "description": "",
+          "description": "Programming language to configure custom file extensions.",
           "type": "object",
           "properties": {
             "extensions": {
